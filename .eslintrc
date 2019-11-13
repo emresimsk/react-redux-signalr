@@ -1,0 +1,28 @@
+{
+  // install the following packages:
+  // yarn add --dev eslint prettier eslint-config-airbnb@ eslint-config-prettier eslint-plugin-prettier eslint-plugin-react eslint-plugin-import eslint-plugin-jsx-a11y
+
+  "extends": ["react-app", "airbnb", "prettier", "prettier/react"],
+  "plugins": ["prettier", "react-hooks"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2016,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", { "packageDir": "./" }],
+    "jsx-a11y/label-has-for": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-underscore-dangle": [1, { "allow": ["_id", "__REDUX_DEVTOOLS_EXTENSION__"] }],
+    "no-console": 0,
+    "react/destructuring-assignment": "off"
+  }
+}

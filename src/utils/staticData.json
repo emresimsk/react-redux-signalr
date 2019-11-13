@@ -1,0 +1,61 @@
+{
+  "currencies": {
+    "TRY": {
+      "symbol": "₺",
+      "color": "#fbc34e"
+    },
+    "USD": {
+      "symbol": "$",
+      "color": "#5ab466"
+    },
+    "EUR": {
+      "symbol": "€",
+      "color": "#3d88c8"
+    },
+    "CHF": {
+      "symbol": "CHF",
+      "color": "#5ab3b4"
+    },
+    "GBP": {
+      "symbol": "£",
+      "color": "#805ab4"
+    },
+    "CNY": {
+      "symbol": "¥",
+      "color": "#805ab4"
+    },
+    "BRL": {
+      "symbol": "R$",
+      "color": "#805ab4"
+    },
+    "IDR": {
+      "symbol": "Rp",
+      "color": "#805ab4"
+    },
+    "KPW": {
+      "symbol": "₩",
+      "color": "#805ab4"
+    },
+    "CAD": {
+      "symbol": "C$",
+      "color": "#805ab4"
+    },
+    "INR": {
+      "symbol": "₹",
+      "color": "#805ab4"
+    },
+    "RUB": {
+      "symbol": "₽",
+      "color": "#805ab4"
+    },
+    "JPY": {
+      "symbol": "¥",
+      "color": "#805ab4"
+    },
+    "AUD": {
+      "symbol": "A$",
+      "color": "#805ab4"
+    }
+  }
+
+}

@@ -1,0 +1,93 @@
+{
+  "name": "md-react-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=8.5.0"
+  },
+  "scripts": {
+    "start": "npm run set:dev & react-scripts start",
+    "set:dev": "set NODE_ENV=.env.development",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "prettier": "prettier --write \"{src/!(assets),src}/**/*.js\"",
+    "eject": "react-scripts eject",
+    "clean": "rimraf ./build",
+    "test": "CI=true react-scripts test",
+    "coverage": "yarn run test -- --coverage",
+    "postcoverage": "istanbul check-coverage --statements 15 --functions 15 --branches 15 --lines 15",
+    "runcoverage": "hs ./coverage/lcov-report/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run prettier && yarn run lint:fix",
+      "pre-push": "yarn run test"
+    }
+  },
+  "dependencies": {
+    "@aspnet/signalr": "^1.1.4",
+    "@fortawesome/fontawesome-free": "^5.10.0",
+    "animate.css": "^3.7.2",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "connected-react-router": "^6.5.2",
+    "core-js": "^3.1.4",
+    "flag-icon-css": "^3.3.0",
+    "history": "^4.9.0",
+    "jwt-decode": "^2.2.0",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "qs": "^6.7.0",
+    "raf": "^3.4.1",
+    "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.1",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "react-intl": "^2.9.0",
+    "react-redux": "^7.1.0",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.0.1",
+    "react-slick": "^0.24.0",
+    "react-toastify": "^5.3.2",
+    "reactstrap": "^8.0.1",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "remote-redux-devtools": "^0.5.16",
+    "styled-components": "^4.3.2",
+    "sweetalert2": "^8.14.0",
+    "sweetalert2-react-content": "^1.1.0",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "jest-enzyme": "^7.0.2",
+    "prettier": "^1.18.2",
+    "react-test-renderer": "^16.8.6",
+    "redux-mock-store": "^1.5.3",
+    "rimraf": "^2.6.3",
+    "sinon": "^7.3.2",
+    "stylelint": "^10.1.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-scss": "^3.9.2"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
